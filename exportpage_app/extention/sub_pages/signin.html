@@ -1,0 +1,28 @@
+
+<div class="container" ng-class="{submited : isSubmited()}">
+	<div class="alert alert-danger" role="alert" ng-show="!logged"> 
+	  <strong>login or password not correct</strong>
+	</div>
+
+	<form class="auth-form" id="signin">
+	    <div class="form-group row">
+			<label for="login" class="col-sm-2 col-form-label">Login</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="login" placeholder="Login" 
+				ng-model="login" required>
+			</div>
+	    </div>
+	    <div class="form-group row">
+			<label for="password" class="col-sm-2 col-form-label">Password</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-control" id="password" placeholder="Password"
+				ng-model="password" required>
+			</div>
+	    </div>
+	    <div class="form-group row">
+			<div class="offset-sm-2 col-sm-10">
+				<button type="" class="btn btn-primary auth-form__button" ng-click="signIn()">Sign in</button>
+			</div>
+	    </div>
+	</form>
+</div>

@@ -1,0 +1,17 @@
+<div class="home-view">
+	<div ng-controller="exportaction" ng-class="{submited : isSubmited()}">
+		<div class="alert alert-success" role="alert" ng-show="exported">
+		  the page has been exported successfully !
+		</div>
+
+		<div ng-controller="logout">
+			<a href="#" ng-click="logOut()">log out</a>
+		</div>
+
+		<h1>welcome {{user}}!</h1>
+
+		<div class="export-action">
+			<button class="btn btn-primary" ng-click="exportPage()">export page</button>
+		</div>
+	</div>
+</div>
